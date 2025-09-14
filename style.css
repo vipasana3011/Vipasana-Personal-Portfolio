@@ -1282,3 +1282,30 @@ img.blur-up.loaded{ filter: blur(0); }
 
 
 .reduce-motion *{ transition: none !important; animation: none !important; }
+
+:root{
+  --header-h: 72px;         
+}
+@media (min-width: 900px){
+  :root{ --header-h: 80px; }  
+}
+
+header{
+  position: sticky;          
+  top: 0;
+  z-index: 1000;
+  background: #fff;           
+/
+.home,
+section:first-of-type{
+  padding-top: calc(var(--header-h) + 24px) !important;
+}
+
+html{
+  scroll-padding-top: calc(var(--header-h) + 12px);
+}
+
+
+.home h1{
+  margin-top: 0;
+}
