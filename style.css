@@ -1309,3 +1309,13 @@ html{
 .home h1{
   margin-top: 0;
 }
+/* Mobile view fix */
+@media (max-width: 768px) {
+  body {
+    padding-top: 20px; /
+  }
+
+  .hero-section, .intro, header {
+    margin-top: 20px; 
+  }
+}
