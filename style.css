@@ -88,7 +88,7 @@ header {
 
 /* ================= Hero Section ================= */
 section {
-  padding: 100px 10%;
+  padding: 60px 5%;
 }
 
 .home {
@@ -1206,18 +1206,19 @@ p, li, a, button{ font-size: clamp(14px, 2.6vw, 18px); }
 
 
 header{
-  position: sticky;         
+  position: sticky;          
   top: 0;
   z-index: 1000;
-  background: #fff;          
+  background: #fff;
 }
 
-
-.home,
-section:first-of-type{
-  padding-top: calc(var(--header-h) + 24px) !important;
+:root {
+  --header-h: 70px;
 }
 
+.home {
+  padding-top: 90px;
+}
 
 html{
   scroll-padding-top: calc(var(--header-h) + 12px);
@@ -1309,13 +1310,19 @@ html{
 .home h1{
   margin-top: 0;
 }
-/* Mobile view fix */
+  #Mobile FIX
 @media (max-width: 768px) {
+
   body {
-    padding-top: 20px; /
+    padding-top: 0;
   }
 
-  .hero-section, .intro, header {
-    margin-top: 20px; 
+  .home {
+    padding-top: 100px;
   }
+
+  section {
+    padding: 40px 5%;
+  }
+
 }
