@@ -1329,3 +1329,13 @@ html{
   body {
   padding-top: 80px;
 }
+
+body{
+  padding-top: 70px;
+}
+
+@media (max-width: 600px){
+  body{
+    padding-top: 80px;
+  }
+}
