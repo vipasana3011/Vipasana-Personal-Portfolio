@@ -769,3 +769,56 @@ footer {
     font-size: 0.75rem;
   }
 }
+/* ================= SOCIAL ICONS CENTER ALIGNMENT ================= */
+
+/* Container Center Alignment */
+.contact-info {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+}
+
+/* Social Icons Wrapper */
+.contact-info .social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+}
+
+/* Individual Icons */
+.contact-info .social-icons a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  font-size: 22px;
+  color: #ff4d88; /* Pink aesthetic */
+  background: #fff;
+  border-radius: 50%;
+  border: 2px solid #ffd6e7;
+  box-shadow: 0 4px 10px rgba(255, 105, 135, 0.2);
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+/* Hover Effect */
+.contact-info .social-icons a:hover {
+  background: linear-gradient(135deg, #ff85a2, #ff4d88);
+  color: #fff;
+  transform: translateY(-5px) scale(1.1);
+  box-shadow: 0 8px 18px rgba(255, 105, 135, 0.35);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 480px) {
+  .contact-info .social-icons a {
+    width: 45px;
+    height: 45px;
+    font-size: 20px;
+  }
+}
