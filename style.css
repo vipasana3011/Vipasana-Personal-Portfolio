@@ -822,3 +822,68 @@ footer {
     font-size: 20px;
   }
 }
+/* ================= THANK YOU PAGE STYLING ================= */
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Center the thank-you section */
+.contact {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #fff0f5, #ffe4ec);
+  text-align: center;
+}
+
+/* Heading Styling */
+.contact .heading {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.contact .heading span {
+  color: #ff4d88;
+}
+
+/* Paragraph Styling */
+.contact p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 25px;
+}
+
+/* Back to Home Button */
+.contact .btn {
+  display: inline-block;
+  padding: 12px 28px;
+  background: linear-gradient(135deg, #ff85a2, #ff4d88);
+  color: #fff;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: 0 6px 15px rgba(255, 105, 135, 0.3);
+  transition: all 0.3s ease;
+}
+
+.contact .btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(255, 105, 135, 0.4);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 600px) {
+  .contact .heading {
+    font-size: 2rem;
+  }
+
+  .contact p {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+}
