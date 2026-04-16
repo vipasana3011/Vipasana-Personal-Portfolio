@@ -600,3 +600,172 @@ footer {
     opacity: 0;
   }
 }
+/* ================= SKILLS SECTION ALIGNMENT FIX ================= */
+
+/* Skills Section */
+.skills {
+  background: #fff5f8;
+  padding: 80px 10%;
+  text-align: center;
+}
+
+.skills .heading {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.skills .subtext {
+  max-width: 650px;
+  margin: 0 auto 40px auto;
+  color: #666;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Grid Layout */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  align-items: stretch;
+}
+
+/* Skill Cards */
+.skill-card {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(255, 105, 135, 0.15);
+  text-align: left;
+  transition: all 0.3s ease;
+  border: 1px solid #ffe4ec;
+  height: 100%;
+}
+
+.skill-card:hover {
+  transform: translateY(-8px);
+}
+
+/* Card Header */
+.skill-card-head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.skill-card-head i {
+  font-size: 1.5rem;
+  color: #ff4d88;
+}
+
+.skill-card h3 {
+  font-size: 1.3rem;
+  margin: 0;
+  color: #333;
+}
+
+/* Note Text */
+.card-note {
+  font-size: 0.9rem;
+  color: #888;
+  margin-bottom: 15px;
+  font-style: italic;
+}
+
+/* Badges */
+.badge-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 15px;
+}
+
+.badge {
+  background: #ffe4ec;
+  color: #ff4d88;
+  font-size: 0.8rem;
+  padding: 5px 12px;
+  border-radius: 20px;
+  border: 1px solid #ffd6e0;
+  white-space: nowrap;
+  transition: 0.3s ease;
+}
+
+.badge:hover {
+  background: #ff4d88;
+  color: #fff;
+}
+
+/* Divider Line */
+.level-strip {
+  margin-top: 15px;
+  padding-top: 10px;
+  border-top: 1px dashed #ffd6e0;
+}
+
+/* Level Tags */
+.level-tag {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #ff4d88;
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Focus Tags List */
+.focus-tags {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.focus-tags li {
+  font-size: 0.9rem;
+  color: #555;
+  margin: 3px 0;
+  padding-left: 0;
+}
+
+/* Bottom Callout */
+.skill-cta {
+  margin-top: 40px;
+  font-size: 1rem;
+  color: #555;
+}
+
+.skill-cta b {
+  color: #ff4d88;
+}
+
+/* ================= RESPONSIVE FIXES ================= */
+
+/* Tablets */
+@media (max-width: 768px) {
+  .skills {
+    padding: 60px 5%;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .skill-card {
+    text-align: left;
+  }
+}
+
+/* Small Mobiles */
+@media (max-width: 480px) {
+  .skills .heading {
+    font-size: 2rem;
+  }
+
+  .skills .subtext {
+    font-size: 0.9rem;
+  }
+
+  .badge {
+    font-size: 0.75rem;
+  }
+}
